@@ -25,7 +25,7 @@ public class MainViewModel extends AndroidViewModel {
   private Date apodDate;
   private MutableLiveData<Apod> apod;
 
-  public MainViewModel(@NonNull Application application, Date apodDate) {
+  public MainViewModel(@NonNull Application application) {
     super(application);
     apod = new MutableLiveData<>();
     setApodDate(new Date()); //TODO Investigate adjustment for NASA APOD-relavant time zone.
