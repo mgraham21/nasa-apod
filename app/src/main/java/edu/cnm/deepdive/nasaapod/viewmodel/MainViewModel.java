@@ -30,7 +30,7 @@ public class MainViewModel extends AndroidViewModel {
     super(application);
     apod = new MutableLiveData<>();
     throwable = new MutableLiveData<>();
-    setApodDate(new Date()); //TODO Investigate adjustment for NASA APOD-relavant time zone.
+    setApodDate(new Date()); //TODO Investigate adjustment for NASA APOD-relavant time zone
   }
 
   public LiveData<Apod> getApod() { return apod;
