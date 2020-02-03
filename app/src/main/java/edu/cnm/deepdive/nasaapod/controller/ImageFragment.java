@@ -1,14 +1,12 @@
 package edu.cnm.deepdive.nasaapod.controller;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
@@ -19,24 +17,14 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import edu.cnm.deepdive.android.DateTimePickerFragment;
 import edu.cnm.deepdive.android.DateTimePickerFragment.Mode;
-import edu.cnm.deepdive.android.DateTimePickerFragment.OnChangeListener;
-import edu.cnm.deepdive.nasaapod.BuildConfig;
 import edu.cnm.deepdive.nasaapod.R;
-import edu.cnm.deepdive.nasaapod.model.Apod;
-import edu.cnm.deepdive.nasaapod.service.ApodService;
+import edu.cnm.deepdive.nasaapod.model.entity.Apod;
 import edu.cnm.deepdive.nasaapod.viewmodel.MainViewModel;
-import java.io.IOException;
 import java.util.Calendar;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ImageFragment extends Fragment {
 
